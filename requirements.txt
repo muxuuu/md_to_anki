@@ -1,2 +1,4 @@
 markdown==3.4.3
-requests==2.31.0 
+requests==2.31.0
+customtkinter==5.2.1
+pyinstaller==6.3.0 
