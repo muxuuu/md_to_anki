@@ -1,6 +1,6 @@
-# Markdown to Anki Converter
+# Klib Markdown to Anki Converter
 
-一个将 Markdown 格式的读书笔记批量转换为 Anki 卡片的工具。
+一个将 Klib 导出的 Markdown 格式的读书笔记批量转换为 Anki 卡片的工具。
 
 A tool for batch converting Markdown reading notes to Anki cards.
 
@@ -22,10 +22,13 @@ A tool for batch converting Markdown reading notes to Anki cards.
 
 1. 下载源代码 | Download the source code
 2. 安装依赖 | Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
+
 3. 运行程序 | Run the program
+
 ```bash
 python md_to_anki.py
 ```
@@ -33,23 +36,26 @@ python md_to_anki.py
 ## 使用方法 | Usage
 
 1. 确保 Anki 中已创建名为 "Reading" 的笔记类型，包含以下字段：
+
    - Context（正文）
    - Book（书名）
    - Chapter（章节）
    - Notes（笔记）
 
    Make sure you have created a note type named "Reading" in Anki with the following fields:
+
    - Context
    - Book
    - Chapter
    - Notes
-
 2. 在图形界面中：
+
    - 选择 Markdown 文件
    - 输入目标牌组名称
    - 点击"转换并添加到 Anki"
 
    In the GUI:
+
    - Select your Markdown file
    - Enter the target deck name
    - Click "Convert and Add to Anki"
@@ -98,4 +104,4 @@ MIT License
 
 欢迎提交 Issue 和 Pull Request。
 
-Issues and Pull Requests are welcome. 
+Issues and Pull Requests are welcome.
