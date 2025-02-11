@@ -1,16 +1,16 @@
-# Klib Markdown to Anki Converter
+# Markdown to Anki Converter
 
-一个将 Klib 导出的 Markdown 格式的读书笔记批量转换为 Anki 卡片的工具。
+一个将 Markdown 格式的读书笔记批量转换为 Anki 卡片的工具。
 
 A tool for batch converting Markdown reading notes to Anki cards.
 
 ## 功能特点 | Features
 
-- 支持从 Markdown 文件批量导入笔记到 Anki | Batch import notes from Markdown files to Anki
-- 保持书籍、章节的层级结构 | Maintain book and chapter hierarchy
-- 支持笔记和正文的对应关系 | Support mapping between notes and content
-- 简单易用的图形界面 | User-friendly graphical interface
-- 自动创建 Anki 卡片 | Automatically create Anki cards
+- 支持从 Markdown 文件批量导入笔记到 Anki
+- 保持书籍、章节的层级结构
+- 支持笔记和正文的对应关系
+- 简单易用的图形界面
+- 自动创建 Anki 卡片
 
 ## 前置要求 | Prerequisites
 
@@ -18,44 +18,44 @@ A tool for batch converting Markdown reading notes to Anki cards.
 2. Anki 软件 | Anki software
 3. [AnkiConnect](https://ankiweb.net/shared/info/2055492159) 插件 | AnkiConnect add-on
 
-## 安装和运行 | Installation and Running
+## 安装 | Installation
 
-1. 下载源代码 | Download the source code
-2. 安装依赖 | Install dependencies
-
+1. 克隆仓库 | Clone the repository
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/yourusername/md_to_anki.git
+cd md_to_anki
 ```
 
-3. 运行程序 | Run the program
-
+2. 安装依赖 | Install dependencies
 ```bash
-python md_to_anki.py
+pip install -r requirements.txt
 ```
 
 ## 使用方法 | Usage
 
 1. 确保 Anki 中已创建名为 "Reading" 的笔记类型，包含以下字段：
-
    - Context（正文）
    - Book（书名）
    - Chapter（章节）
    - Notes（笔记）
 
    Make sure you have created a note type named "Reading" in Anki with the following fields:
-
    - Context
    - Book
    - Chapter
    - Notes
-2. 在图形界面中：
 
+2. 运行程序 | Run the program
+```bash
+python md_to_anki.py
+```
+
+3. 在图形界面中：
    - 选择 Markdown 文件
    - 输入目标牌组名称
    - 点击"转换并添加到 Anki"
 
    In the GUI:
-
    - Select your Markdown file
    - Enter the target deck name
    - Click "Convert and Add to Anki"
@@ -104,4 +104,4 @@ MIT License
 
 欢迎提交 Issue 和 Pull Request。
 
-Issues and Pull Requests are welcome.
+Issues and Pull Requests are welcome. 
